@@ -12,9 +12,9 @@ export default function About() {
           <nav aria-label="Primary navigation">
             <a className="about-nav-home" href="/">Home</a>
             <a className="is-current" href="/about.html">About</a>
-            <a href="/#work">Case Studies</a>
+            <a href="/projects.html">Projects</a>
             <a href="/#contact">Contact</a>
-            <a className="about-nav-cta" href="javascript:void(0)">View Resume</a>
+            <a className="about-nav-cta" href="mailto:simrannarwani01@gmail.com?subject=Resume%20request">View Resume</a>
           </nav>
         </div>
       </header>
@@ -141,7 +141,6 @@ export default function About() {
                 <p>The colorful hair is intentional.</p>
                 <p>It reminds me that taking the work seriously does not require sanding away everything distinctive about the person doing it.</p>
                 <blockquote className="nyla-quote">
-                  <img className="nyla-quote-drawing" src="/nyla-editorial-drawing-v2.png" alt="Hand-drawn illustration of Nyla sitting on the quote line" />
                   <span>“I take the work seriously. I don’t think that requires becoming less recognizable as myself.”</span>
                 </blockquote>
                 </div>
@@ -186,7 +185,7 @@ export default function About() {
               <a href="mailto:simrannarwani01@gmail.com">Email</a>
               <a href="https://www.linkedin.com/in/simran-narwani/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               <a href="mailto:simrannarwani01@gmail.com?subject=Resume%20request" aria-label="Request Simran Narwani's resume">Resume</a>
-              <a href="/#work">Case Studies</a>
+              <a href="/projects.html">Projects</a>
             </div>
           </div>
           <div className="about-footer-bottom">

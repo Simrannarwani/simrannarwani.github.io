@@ -3253,8 +3253,8 @@ const paletteInteractions = `
         '<a href="./" target="_top">Home</a>' +
         '<a href="mailto:simrannarwani01@gmail.com">Email</a>' +
         '<a href="https://www.linkedin.com/in/simran-narwani/" target="_blank" rel="noopener noreferrer">LinkedIn</a>' +
-        '<a href="javascript:void(0)" aria-label="Resume">Resume</a>' +
-        '<a href="#work">Projects</a>';
+        '<a href="mailto:simrannarwani01@gmail.com?subject=Resume%20request" aria-label="Request Simran Narwani\\'s resume">Resume</a>' +
+        '<a href="./projects.html" target="_top">Projects</a>';
     }
     var positioningSection = document.querySelector('.positioning');
     if (positioningSection && positioningSection.id === 'about') positioningSection.removeAttribute('id');
@@ -3263,9 +3263,9 @@ const paletteInteractions = `
       navigationLinks.innerHTML =
         '<a class="nav-home" href="./" target="_top">Home</a>' +
         '<a href="./about.html" target="_top">About</a>' +
-        '<a href="#work">Projects</a>' +
+        '<a href="./projects.html" target="_top">Projects</a>' +
         '<a href="#contact">Contact</a>' +
-        '<a class="nav-cta magnetic" href="javascript:void(0)">View Resume</a>';
+        '<a class="nav-cta magnetic" href="mailto:simrannarwani01@gmail.com?subject=Resume%20request">View Resume</a>';
     }
 
 
