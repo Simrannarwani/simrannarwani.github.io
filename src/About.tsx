@@ -179,10 +179,10 @@ export default function About() {
               <div className="about-footer-location">New York City</div>
             </div>
             <div className="about-footer-links">
-              <a href="mailto:simrannarwani01@gmail.com">Email <span>simrannarwani01@gmail.com</span></a>
+              <a href="mailto:simrannarwani01@gmail.com">Email</a>
               <a href="https://www.linkedin.com/in/simran-narwani/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               <a href="mailto:simrannarwani01@gmail.com?subject=Resume%20request" aria-label="Request Simran Narwani's resume">Resume</a>
-              <a href="/#work">Selected Work</a>
+              <a href="/#work">Case Studies</a>
             </div>
           </div>
           <div className="about-footer-bottom">

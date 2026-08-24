@@ -328,12 +328,14 @@ a { color: inherit; text-decoration: none; }
 .story-chapter {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
+  align-content: center;
   gap: 18px;
-  padding-block: clamp(82px, 11vw, 145px);
+  min-height: calc(100svh - 74px);
+  padding-block: clamp(44px, 6vw, 78px);
   padding-inline: max(clamp(28px, 7vw, 86px), calc((100vw - 1100px) / 2 + 86px));
   border-bottom: 0;
 }
-.story-chapter:nth-of-type(1) { padding-top: clamp(52px, 7vw, 88px); background: #fffdf7; }
+.story-chapter:nth-of-type(1) { padding-top: clamp(46px, 6vw, 68px); padding-bottom: clamp(40px, 5vw, 58px); background: #fffdf7; }
 .story-chapter:nth-of-type(2) { background: #e5e9ff; }
 .story-chapter:nth-of-type(3) { color: #fffdf7; background: #101b33; }
 .story-chapter:nth-of-type(4) { background: #ffd4c7; }
@@ -383,13 +385,13 @@ a { color: inherit; text-decoration: none; }
 }
 .story-content h2 {
   max-width: none;
-  margin: 0 0 clamp(52px, 7vw, 84px);
+  margin: 0 0 clamp(30px, 4vw, 48px);
   color: #101010;
   font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: clamp(4rem, 9vw, 8.8rem);
+  font-size: clamp(3rem, 5.2vw, 4.8rem);
   font-weight: 760;
-  line-height: .94;
-  letter-spacing: -.045em;
+  line-height: .96;
+  letter-spacing: -.04em;
   text-align: left;
   text-wrap: balance;
 }
@@ -400,23 +402,23 @@ a { color: inherit; text-decoration: none; }
 }
 .story-copy > p {
   max-width: none;
-  margin: 0 0 22px;
+  margin: 0 0 16px;
   color: #343434;
-  font-size: clamp(1rem, 1.45vw, 1.12rem);
-  line-height: 1.82;
+  font-size: clamp(.92rem, 1vw, 1rem);
+  line-height: 1.62;
   break-inside: avoid;
 }
-.story-copy > p:first-of-type { font-size: clamp(1.08rem, 1.7vw, 1.26rem); font-weight: 700; line-height: 1.55; }
+.story-copy > p:first-of-type { font-size: clamp(1rem, 1.15vw, 1.12rem); font-weight: 700; line-height: 1.48; }
 .story-copy > p:nth-of-type(2)::first-letter { float: left; margin: .06em .1em 0 0; font-family: Georgia, "Times New Roman", serif; font-size: 5.4em; font-weight: 400; line-height: .72; }
 .story-content blockquote {
   max-width: 780px;
-  margin: 58px auto 0;
-  padding: 28px 18px;
+  margin: 34px auto 0;
+  padding: 18px;
   border-top: 1px solid currentColor;
   border-bottom: 1px solid currentColor;
   color: #641a58;
   font-family: "Times New Roman", Georgia, serif;
-  font-size: clamp(1.75rem, 3.4vw, 3rem);
+  font-size: clamp(1.45rem, 2.4vw, 2.2rem);
   font-style: italic;
   line-height: 1.08;
   letter-spacing: -.025em;
@@ -494,11 +496,13 @@ a { color: inherit; text-decoration: none; }
   .cover-footer-line span { display: none; }
   .cover-footer-line { justify-content: flex-end; }
   .cover-intro { padding-inline: 12px; text-align: left; }
-  .story-chapter { grid-template-columns: 1fr; gap: 16px; }
+  .story-chapter { grid-template-columns: 1fr; align-content: start; gap: 14px; min-height: 0; padding-block: clamp(48px, 14vw, 62px); }
   .story-number { padding-top: 0; }
-  .story-content h2 { margin-bottom: 38px; font-size: clamp(3.2rem, 15vw, 5rem); line-height: .96; letter-spacing: -.035em; }
+  .story-content h2 { margin-bottom: 24px; font-size: clamp(2.5rem, 11.5vw, 3rem); line-height: .98; letter-spacing: -.035em; }
   .story-copy { columns: 1; column-rule: 0; }
-  .story-content blockquote { margin-top: 38px; }
+  .story-copy > p { margin-bottom: 12px; font-size: .9rem; line-height: 1.55; }
+  .story-copy > p:first-of-type { font-size: .98rem; line-height: 1.45; }
+  .story-content blockquote { margin-top: 26px; padding-block: 14px; font-size: 1.35rem; }
   .about-closing h2 { font-size: clamp(2.35rem, 10.8vw, 2.65rem); line-height: .96; letter-spacing: -.04em; }
   .about-copy-columns { grid-template-columns: 1fr; gap: 22px; margin-top: 34px; }
   .snapshot-grid { grid-template-columns: 1fr; }
@@ -507,6 +511,5 @@ a { color: inherit; text-decoration: none; }
   .about-principles article { min-height: 210px; }
   .about-principles h3 { margin-top: 46px; }
   .about-footer { padding-block: 58px 38px; }
-  .about-footer-links a:first-child span { display: none; }
   .about-footer-bottom { flex-direction: column; }
 }
