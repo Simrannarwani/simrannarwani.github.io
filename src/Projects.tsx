@@ -1,4 +1,5 @@
 import './projects.css'
+import { useResponsiveMenu } from './useResponsiveMenu'
 
 const articleUrl = 'https://www.cntraveller.in/story/a-stranger-in-the-city/';
 
@@ -375,15 +376,29 @@ function ProjectList({ eyebrow, title, intro, projects, imageSide = 'left', view
 }
 
 export default function Projects() {
+  const { headerRef, menuOpen, closeMenu, toggleMenu } = useResponsiveMenu();
+
   return (
     <div className="page">
-      <header className="siteNav">
+      <header className="siteNav" ref={headerRef} data-menu-open={menuOpen}>
         <div className="shell navInner">
           <a className="brand brandSelectionLogo" href="#top" aria-label="Simran Narwani">
             <span className="brandSelectedName">Simran<span className="brandSelectionCaret" aria-hidden="true" /></span>
             <span className="brandFamilyName">Narwani</span>
           </a>
-          <nav className="navLinks" aria-label="Primary navigation">
+          <button
+            className="projectMenuButton"
+            type="button"
+            aria-expanded={menuOpen}
+            aria-controls="projects-primary-navigation"
+            aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            onClick={toggleMenu}
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+          <nav id="projects-primary-navigation" className="navLinks" aria-label="Primary navigation" onClick={closeMenu}>
             <a href="/">Home</a><a href="/about.html">About</a><a href="#work" aria-current="page">Projects</a><a href="#contact">Contact</a><a className="navCta" href="mailto:simrannarwani01@gmail.com?subject=Resume%20request">View Resume</a>
           </nav>
         </div>

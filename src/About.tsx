@@ -1,15 +1,30 @@
 import './about.css'
+import { useResponsiveMenu } from './useResponsiveMenu'
 
 export default function About() {
+  const { headerRef, menuOpen, closeMenu, toggleMenu } = useResponsiveMenu()
+
   return (
     <div className="about-page">
-      <header className="about-nav">
+      <header className="about-nav" ref={headerRef} data-menu-open={menuOpen}>
         <div className="about-shell about-nav-inner">
           <a className="about-brand brand-selection-logo" href="/" aria-label="Simran Narwani home">
             <span className="brand-selected-name">Simran<span className="brand-selection-caret" aria-hidden="true"></span></span>
             <span className="brand-family-name">Narwani</span>
           </a>
-          <nav aria-label="Primary navigation">
+          <button
+            className="about-menu-button"
+            type="button"
+            aria-expanded={menuOpen}
+            aria-controls="about-primary-navigation"
+            aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            onClick={toggleMenu}
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+          <nav id="about-primary-navigation" aria-label="Primary navigation" onClick={closeMenu}>
             <a className="about-nav-home" href="/">Home</a>
             <a className="is-current" href="/about.html">About</a>
             <a href="/projects.html">Projects</a>
