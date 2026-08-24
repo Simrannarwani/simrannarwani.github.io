@@ -3216,6 +3216,198 @@ const paletteOverrides = `
       opacity: 0.42;
     }
   }
+
+  /* Real project archive migrated from the Wix portfolio. */
+  .work.migrated-case-studies {
+    padding: clamp(88px, 10vw, 138px) 0;
+    background:
+      radial-gradient(circle at 92% 3%, rgba(78, 57, 220, 0.1), transparent 24%),
+      #F8F4EC;
+  }
+
+  .migrated-case-studies .case-studies-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+    gap: clamp(28px, 6vw, 82px);
+    align-items: end;
+    margin-bottom: clamp(42px, 6vw, 72px);
+  }
+
+  .migrated-case-studies .case-studies-head h2 {
+    max-width: 780px;
+    margin: 14px 0 0;
+    color: #101B33;
+    font-size: clamp(3.4rem, 6.7vw, 6.5rem);
+    line-height: 0.91;
+    letter-spacing: -0.062em;
+  }
+
+  .migrated-case-studies .case-studies-intro {
+    max-width: 430px;
+    margin: 0;
+    color: rgba(16, 27, 51, 0.7);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .case-study-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .case-study-card {
+    --case-accent: #4A2BC8;
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid rgba(16, 27, 51, 0.14);
+    border-radius: 28px;
+    background: rgba(255, 253, 247, 0.92);
+    box-shadow: 0 18px 46px rgba(16, 27, 51, 0.08);
+    transition: transform 260ms ease, box-shadow 260ms ease;
+  }
+
+  .case-study-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 26px 58px rgba(16, 27, 51, 0.13);
+  }
+
+  .case-study-card:first-child {
+    grid-column: 1 / -1;
+    --case-accent: #3427C7;
+  }
+
+  .case-study-card:nth-child(2) { --case-accent: #C02491; }
+  .case-study-card:nth-child(3) { --case-accent: #E45057; }
+  .case-study-card:nth-child(4) { --case-accent: #168B85; }
+  .case-study-card:nth-child(5) { --case-accent: #7555D9; }
+
+  .case-study-media {
+    display: grid;
+    min-height: 300px;
+    overflow: hidden;
+    background: #E9E5DC;
+  }
+
+  .case-study-card:first-child .case-study-media { min-height: 430px; }
+
+  .case-study-media.case-study-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-study-media img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    transition: transform 520ms cubic-bezier(.2,.7,.2,1);
+  }
+
+  .case-study-card:first-child .case-study-media img { min-height: 430px; }
+  .case-study-card:hover .case-study-media img { transform: scale(1.025); }
+
+  .case-study-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: clamp(26px, 3.3vw, 42px);
+  }
+
+  .case-study-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--case-accent);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 750;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+
+  .case-study-meta::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    box-shadow: 0 0 14px color-mix(in srgb, currentColor 48%, transparent);
+  }
+
+  .case-study-card h3 {
+    max-width: 760px;
+    margin: 16px 0 9px;
+    color: #101B33;
+    font-family: var(--font-serif);
+    font-size: clamp(2.3rem, 4vw, 4.4rem);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -0.045em;
+  }
+
+  .case-study-subtitle {
+    margin: 0 0 20px;
+    color: #101B33;
+    font-size: 1rem;
+    font-weight: 760;
+    line-height: 1.4;
+  }
+
+  .case-study-description {
+    max-width: 780px;
+    margin: 0;
+    color: rgba(16, 27, 51, 0.72);
+    font-size: 0.94rem;
+    line-height: 1.68;
+  }
+
+  .case-study-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: auto;
+    padding-top: 26px;
+  }
+
+  .case-study-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    min-height: 40px;
+    padding: 8px 14px;
+    border: 1px solid rgba(16, 27, 51, 0.28);
+    border-radius: 999px;
+    color: #101B33;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 0.72rem;
+    font-weight: 760;
+    transition: color 200ms ease, background 200ms ease, border-color 200ms ease, transform 200ms ease;
+  }
+
+  .case-study-link:hover,
+  .case-study-link:focus-visible {
+    color: #FFFFFF;
+    background: var(--case-accent);
+    border-color: var(--case-accent);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 820px) {
+    .migrated-case-studies .case-studies-head,
+    .case-study-grid { grid-template-columns: 1fr; }
+    .case-study-card:first-child { grid-column: auto; }
+    .case-study-card:first-child .case-study-media,
+    .case-study-card:first-child .case-study-media img { min-height: 300px; }
+  }
+
+  @media (max-width: 560px) {
+    .case-study-media.case-study-gallery { grid-template-columns: 1fr; }
+    .case-study-media,
+    .case-study-media img { min-height: 240px; }
+    .case-study-card h3 { font-size: clamp(2.15rem, 11vw, 3.1rem); }
+  }
 `
 
 const paletteInteractions = `
@@ -3265,6 +3457,68 @@ const paletteInteractions = `
         '<a href="#work">Case Studies</a>' +
         '<a href="#contact">Contact</a>' +
         '<a class="nav-cta magnetic" href="javascript:void(0)">View Resume</a>';
+    }
+
+    var migratedWorkSection = document.querySelector('.work');
+    if (migratedWorkSection) {
+      migratedWorkSection.classList.add('migrated-case-studies');
+      migratedWorkSection.innerHTML =
+        '<div class="shell">' +
+          '<div class="case-studies-head">' +
+            '<div><div class="eyebrow">Case Studies</div><h2>Work built to make ideas clear, useful, and memorable.</h2></div>' +
+            '<p class="case-studies-intro">A selection of product marketing, digital brand, and creative concept work spanning launches, social content, and visual identity.</p>' +
+          '</div>' +
+          '<div class="case-study-grid">' +
+            '<article class="case-study-card">' +
+              '<div class="case-study-media"><img src="./case-studies/product-marketing.avif" alt="Digital product catalog interface created for the International WELL Building Institute" width="972" height="858" loading="lazy" decoding="async"></div>' +
+              '<div class="case-study-body">' +
+                '<div class="case-study-meta">Product marketing</div>' +
+                '<h3>Leading the launch and maintenance of a digital catalog</h3>' +
+                '<p class="case-study-subtitle">Audience research, positioning, messaging, and cross-functional launch strategy</p>' +
+                '<p class="case-study-description">My process for launching a new product starts with creating audience personas based on thorough research and competitive analysis. I aim to understand the needs, pain points, and preferred platforms of the target audience. Then, I collaborate with the product and sales teams to understand the technical features, benefits, and market demand of the product. I draft messaging and campaign pillars that align with the product vision, value proposition, and positioning. I also analyze industry trends to ensure the content is innovative and relevant.</p>' +
+                '<div class="case-study-links"><a class="case-study-link" href="https://directory.wearewell.com/" target="_blank" rel="noopener noreferrer">Explore the catalog ↗</a><a class="case-study-link" href="https://www.wellcertified.com/works-with-well/" target="_blank" rel="noopener noreferrer">View lead generation ↗</a></div>' +
+              '</div>' +
+            '</article>' +
+            '<article class="case-study-card">' +
+              '<div class="case-study-media"><img src="./case-studies/media-x-women.avif" alt="Media x Women social content and WorkPlay article presentation" width="729" height="641" loading="lazy" decoding="async"></div>' +
+              '<div class="case-study-body">' +
+                '<div class="case-study-meta">Media x Women</div>' +
+                '<h3>Managing the digital identity of creative assets</h3>' +
+                '<p class="case-study-subtitle">Social strategy, original content, brand voice, and marketing leadership</p>' +
+                '<p class="case-study-description">My role at Media x Women consisted of organizing content for distribution across social platforms and creating original content for the brand. I maintained a consistent voice across The HSMI Podcast, TikTok, Instagram, the WorkPlay Blog, and Fast 5 on YouTube. I also represented marketing in leadership meetings, shared progress reports, and worked with the research team to analyze performance and shape the social media strategy.</p>' +
+                '<div class="case-study-links"><a class="case-study-link" href="https://www.instagram.com/mediaxwomen/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a class="case-study-link" href="https://www.mediaxwomen.com/workplay/game-changing-accessories-for-your-wfh-office" target="_blank" rel="noopener noreferrer">WFH accessories ↗</a><a class="case-study-link" href="https://www.mediaxwomen.com/workplay/is-your-resume-helping-you-get-that-interview" target="_blank" rel="noopener noreferrer">Resume article ↗</a><a class="case-study-link" href="https://www.mediaxwomen.com/workplay/self-care-in-the-midst-of-deadlines" target="_blank" rel="noopener noreferrer">Self-care article ↗</a><a class="case-study-link" href="https://www.mediaxwomen.com/workplay/best-advice-from-the-guest-of-how-she-made-it" target="_blank" rel="noopener noreferrer">HSMI advice ↗</a></div>' +
+              '</div>' +
+            '</article>' +
+            '<article class="case-study-card">' +
+              '<div class="case-study-media"><img src="./case-studies/pop-n-roll.avif" alt="Pop.N.Roll NYC fictional popcorn brand creative" width="601" height="601" loading="lazy" decoding="async"></div>' +
+              '<div class="case-study-body">' +
+                '<div class="case-study-meta">Pop.N.Roll NYC</div>' +
+                '<h3>Marketing a fictional popcorn company</h3>' +
+                '<p class="case-study-subtitle">A self-taught stop-motion, social, and augmented-reality brand experiment</p>' +
+                '<p class="case-study-description">I created Pop.N.Roll as a fictional popcorn company, developing social creative, a brand identity, and original graphics. I taught myself Spark AR to create an Instagram filter and produced stop-motion videos to bring the brand to life.</p>' +
+                '<div class="case-study-links"><a class="case-study-link" href="https://www.instagram.com/pop.n.roll_nyc/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a class="case-study-link" href="https://www.instagram.com/p/CLjBq0Whpxy/" target="_blank" rel="noopener noreferrer">Watch video ↗</a><a class="case-study-link" href="https://www.instagram.com/stories/highlights/17878358426154803/" target="_blank" rel="noopener noreferrer">View filter ↗</a></div>' +
+              '</div>' +
+            '</article>' +
+            '<article class="case-study-card">' +
+              '<div class="case-study-media case-study-gallery"><img src="./case-studies/kiehls-01.avif" alt="Kiehl&apos;s rebrand concept visual one" width="1002" height="1044" loading="lazy" decoding="async"><img src="./case-studies/kiehls-02.avif" alt="Kiehl&apos;s rebrand concept visual two" width="1856" height="1044" loading="lazy" decoding="async"></div>' +
+              '<div class="case-study-body">' +
+                '<div class="case-study-meta">Kiehl&apos;s mockup</div>' +
+                '<h3>Rebranding a heritage skincare brand</h3>' +
+                '<p class="case-study-subtitle">A class project balancing pharmaceutical heritage with contemporary visual appeal</p>' +
+                '<p class="case-study-description">The intention of the rebrand was to consider how Kiehl&apos;s could remain authentic to its pharmaceutical history while becoming more visually appealing to a younger demographic.</p>' +
+              '</div>' +
+            '</article>' +
+            '<article class="case-study-card">' +
+              '<div class="case-study-media case-study-gallery"><img src="./case-studies/beauty-diary-01.avif" alt="Beauty Diary inclusive skincare brand concept visual one" width="1566" height="1044" loading="lazy" decoding="async"><img src="./case-studies/beauty-diary-02.avif" alt="Beauty Diary inclusive skincare brand concept visual two" width="1856" height="1044" loading="lazy" decoding="async"></div>' +
+              '<div class="case-study-body">' +
+                '<div class="case-study-meta">Beauty Diary mockup</div>' +
+                '<h3>Creating inclusive skincare marketing ephemera</h3>' +
+                '<p class="case-study-subtitle">A class project developing a brand concept and supporting visual materials</p>' +
+                '<p class="case-study-description">Beauty Diary was created with the intention of making diverse skincare that catered to people of color and was inclusive in its approach to minority communities.</p>' +
+              '</div>' +
+            '</article>' +
+          '</div>' +
+        '</div>';
     }
 
     var metricCards = Array.from(document.querySelectorAll('.metric-strip .metric'));
