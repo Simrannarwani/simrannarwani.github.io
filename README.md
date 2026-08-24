@@ -2,6 +2,10 @@
 
 Personal portfolio built with React, TypeScript, and Vite.
 
+## Live site
+
+[View the portfolio](https://simrannarwani.github.io/)
+
 ## Development
 
 ```bash
