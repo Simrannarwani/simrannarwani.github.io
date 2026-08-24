@@ -3353,6 +3353,16 @@ const paletteInteractions = `
         link.setAttribute('href', './about.html');
         link.setAttribute('target', '_top');
       }
+      if (label === 'Start a conversation') {
+        link.setAttribute('href', 'https://www.linkedin.com/in/simran-narwani/');
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+      if (label === 'View selected work') {
+        link.textContent = 'View my projects';
+        link.setAttribute('href', './projects.html');
+        link.setAttribute('target', '_top');
+      }
     });
 
     var navigationHeader = document.querySelector('.nav');
