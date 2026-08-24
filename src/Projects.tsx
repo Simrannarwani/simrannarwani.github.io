@@ -399,7 +399,7 @@ export default function Projects() {
             <span aria-hidden="true"></span>
           </button>
           <nav id="projects-primary-navigation" className="navLinks" aria-label="Primary navigation" onClick={closeMenu}>
-            <a href="/">Home</a><a href="/about.html">About</a><a href="#work" aria-current="page">Projects</a><a href="#contact">Contact</a><a className="navCta" href="mailto:simrannarwani01@gmail.com?subject=Resume%20request">View Resume</a>
+            <a href="/">Home</a><a href="/about.html">About</a><a href="#work" aria-current="page">Projects</a><a href="#contact">Contact</a><a className="navCta" href="/Simran-Narwani-Tech-Resume.pdf" download="Simran-Narwani-Tech-Resume.pdf">View Resume</a>
           </nav>
         </div>
       </header>
@@ -468,7 +468,7 @@ export default function Projects() {
       </main>
       <footer className="siteFooter" id="contact">
         <div className="shell">
-          <div className="footerGrid"><div><h3>Simran Narwani</h3><p>Product marketing, brand strategy, and visual storytelling.</p><div className="locationPill"><span aria-hidden="true" />New York City</div></div><div className="footerLinks"><a href="/">Home</a><a href="mailto:simrannarwani01@gmail.com">Email</a><a href="https://www.linkedin.com/in/simran-narwani/" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:simrannarwani01@gmail.com?subject=Resume%20request">Resume</a><a href="#work">Projects</a></div></div>
+          <div className="footerGrid"><div><h3>Simran Narwani</h3><p>Product marketing, brand strategy, and visual storytelling.</p><div className="locationPill"><span aria-hidden="true" />New York City</div></div><div className="footerLinks"><a href="/">Home</a><a href="mailto:simrannarwani01@gmail.com">Email</a><a href="https://www.linkedin.com/in/simran-narwani/" target="_blank" rel="noreferrer">LinkedIn</a><a href="/Simran-Narwani-Tech-Resume.pdf" download="Simran-Narwani-Tech-Resume.pdf">Resume</a><a href="#work">Projects</a></div></div>
           <div className="footerBottom"><span>© 2026 Simran Narwani</span></div>
         </div>
       </footer>

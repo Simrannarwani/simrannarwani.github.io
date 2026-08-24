@@ -29,7 +29,7 @@ export default function About() {
             <a className="is-current" href="/about.html">About</a>
             <a href="/projects.html">Projects</a>
             <a href="/#contact">Contact</a>
-            <a className="about-nav-cta" href="mailto:simrannarwani01@gmail.com?subject=Resume%20request">View Resume</a>
+            <a className="about-nav-cta" href="/Simran-Narwani-Tech-Resume.pdf" download="Simran-Narwani-Tech-Resume.pdf">View Resume</a>
           </nav>
         </div>
       </header>
@@ -199,7 +199,7 @@ export default function About() {
               <a href="/">Home</a>
               <a href="mailto:simrannarwani01@gmail.com">Email</a>
               <a href="https://www.linkedin.com/in/simran-narwani/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href="mailto:simrannarwani01@gmail.com?subject=Resume%20request" aria-label="Request Simran Narwani's resume">Resume</a>
+              <a href="/Simran-Narwani-Tech-Resume.pdf" download="Simran-Narwani-Tech-Resume.pdf" aria-label="Download Simran Narwani's tech resume">Resume</a>
               <a href="/projects.html">Projects</a>
             </div>
           </div>

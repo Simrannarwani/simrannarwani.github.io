@@ -3328,7 +3328,7 @@ const paletteInteractions = `
         '<a href="./" target="_top">Home</a>' +
         '<a href="mailto:simrannarwani01@gmail.com">Email</a>' +
         '<a href="https://www.linkedin.com/in/simran-narwani/" target="_blank" rel="noopener noreferrer">LinkedIn</a>' +
-        '<a href="mailto:simrannarwani01@gmail.com?subject=Resume%20request" aria-label="Request Simran Narwani\\'s resume">Resume</a>' +
+        '<a href="/Simran-Narwani-Tech-Resume.pdf" download="Simran-Narwani-Tech-Resume.pdf" aria-label="Download Simran Narwani\\'s tech resume">Resume</a>' +
         '<a href="./projects.html" target="_top">Projects</a>';
     }
     var positioningSection = document.querySelector('.positioning');
@@ -3340,7 +3340,7 @@ const paletteInteractions = `
         '<a href="./about.html" target="_top">About</a>' +
         '<a href="./projects.html" target="_top">Projects</a>' +
         '<a href="#contact">Contact</a>' +
-        '<a class="nav-cta magnetic" href="mailto:simrannarwani01@gmail.com?subject=Resume%20request">View Resume</a>';
+        '<a class="nav-cta magnetic" href="/Simran-Narwani-Tech-Resume.pdf" download="Simran-Narwani-Tech-Resume.pdf">View Resume</a>';
     }
 
     document.querySelectorAll('.hero-actions a').forEach(function (link) {
