@@ -140,7 +140,10 @@ export default function About() {
                 <p>I care about design, atmosphere and the small choices that make an experience feel considered. I’m usually adjusting something, collecting visual references or wondering whether a good idea could be made a little more memorable.</p>
                 <p>The colorful hair is intentional.</p>
                 <p>It reminds me that taking the work seriously does not require sanding away everything distinctive about the person doing it.</p>
-                <blockquote>“I take the work seriously. I don’t think that requires becoming less recognizable as myself.”</blockquote>
+                <blockquote className="nyla-quote">
+                  <img className="nyla-quote-drawing" src="/nyla-editorial-drawing-v2.png" alt="Hand-drawn illustration of Nyla sitting on the quote line" />
+                  <span>“I take the work seriously. I don’t think that requires becoming less recognizable as myself.”</span>
+                </blockquote>
                 </div>
               </div>
             </article>
