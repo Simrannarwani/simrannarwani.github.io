@@ -10,6 +10,7 @@ export default function About() {
             <span className="brand-family-name">Narwani</span>
           </a>
           <nav aria-label="Primary navigation">
+            <a className="about-nav-home" href="/">Home</a>
             <a className="is-current" href="/about.html">About</a>
             <a href="/#work">Case Studies</a>
             <a href="/#contact">Contact</a>
@@ -78,8 +79,7 @@ export default function About() {
               <span className="story-number">01</span>
               <div className="story-content">
                 <h2>My career started before I knew product marketing was a job.</h2>
-                <div className="story-copy">
-                <p>I’m Simran Narwani. I live in New York and work as a Senior Product Marketing Manager at Zinnia.</p>
+                <div className="story-copy story-copy-starts-with-dropcap">
                 <p>I started in community, media and education, including work with Media x Women and U&amp;I. Those experiences taught me how to build interest without a large platform, earn trust without relying on a title and get people behind an idea that was still taking shape.</p>
                 <p>My career eventually took me further into technology, with work spanning India, Japan and the United States. I learned how differently the same idea can land depending on the audience, the market and the assumptions behind it.</p>
                 <p>I didn’t plan that progression neatly. I followed work that made me curious and gave me the chance to build something useful.</p>
@@ -179,6 +179,7 @@ export default function About() {
               <div className="about-footer-location">New York City</div>
             </div>
             <div className="about-footer-links">
+              <a href="/">Home</a>
               <a href="mailto:simrannarwani01@gmail.com">Email</a>
               <a href="https://www.linkedin.com/in/simran-narwani/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               <a href="mailto:simrannarwani01@gmail.com?subject=Resume%20request" aria-label="Request Simran Narwani's resume">Resume</a>

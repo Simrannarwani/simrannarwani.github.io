@@ -3179,6 +3179,10 @@ const paletteOverrides = `
     .metrics .metric { min-height: 224px; }
   }
 
+  @media (max-width: 760px) {
+    .nav-links .nav-home { display: inline-flex !important; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .hero,
     .how,
@@ -3245,6 +3249,7 @@ const paletteInteractions = `
     }
     if (footerLinks) {
       footerLinks.innerHTML =
+        '<a href="./" target="_top">Home</a>' +
         '<a href="mailto:simrannarwani01@gmail.com">Email</a>' +
         '<a href="https://www.linkedin.com/in/simran-narwani/" target="_blank" rel="noopener noreferrer">LinkedIn</a>' +
         '<a href="javascript:void(0)" aria-label="Resume">Resume</a>' +
@@ -3255,6 +3260,7 @@ const paletteInteractions = `
     if (heroSection) heroSection.id = 'about';
     if (navigationLinks) {
       navigationLinks.innerHTML =
+        '<a class="nav-home" href="./" target="_top">Home</a>' +
         '<a href="./about.html" target="_top">About</a>' +
         '<a href="#work">Case Studies</a>' +
         '<a href="#contact">Contact</a>' +
