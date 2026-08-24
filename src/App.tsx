@@ -3432,6 +3432,14 @@ const paletteInteractions = `
 
     if (experienceSection) experienceSection.remove();
     if (experienceNavLink) experienceNavLink.remove();
+    var marketingOverview = document.querySelector('.story-map');
+    var impactSection = document.querySelector('.positioning');
+    var impactMetrics = document.querySelector('.metrics');
+    var toolkitOverview = document.querySelector('.principles');
+    if (marketingOverview) marketingOverview.remove();
+    if (impactSection) impactSection.remove();
+    if (impactMetrics) impactMetrics.remove();
+    if (toolkitOverview) toolkitOverview.remove();
     if (howEyebrow) howEyebrow.textContent = 'Approach';
     if (positioningEyebrow) positioningEyebrow.textContent = 'The Impact';
     if (positioningCopy) {
