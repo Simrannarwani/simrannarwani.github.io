@@ -3343,6 +3343,18 @@ const paletteInteractions = `
         '<a class="nav-cta magnetic" href="mailto:simrannarwani01@gmail.com?subject=Resume%20request">View Resume</a>';
     }
 
+    document.querySelectorAll('.hero-actions a').forEach(function (link) {
+      var label = link.textContent.trim();
+      if (label === 'Explore my work') {
+        link.setAttribute('href', './projects.html');
+        link.setAttribute('target', '_top');
+      }
+      if (label === 'Get to know me') {
+        link.setAttribute('href', './about.html');
+        link.setAttribute('target', '_top');
+      }
+    });
+
     var navigationHeader = document.querySelector('.nav');
     var navigationInner = document.querySelector('.nav-inner');
     if (navigationHeader && navigationInner && navigationLinks) {
