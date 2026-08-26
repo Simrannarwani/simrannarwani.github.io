@@ -131,6 +131,10 @@ export default function SimranPortfolioDynamicColor(props: {
                 ref={iframeRef}
                 title="Simran Narwani Portfolio"
                 srcDoc={portfolioHtml
+                    .replaceAll(
+                        '<div class="work-panel-actions"><a class="work-case-link" href="javascript:void(0)">Open the case study <span aria-hidden="true">↗</span></a></div>',
+                        ""
+                    )
                     .replace(
                         "</head>",
                         `<style>${paletteOverrides}</style></head>`
